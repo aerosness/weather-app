@@ -1,0 +1,100 @@
+@font-face {
+    font-family: SegoeUI;
+    src:
+        local("Segoe UI"),
+        url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff2) format("woff2"),
+        url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff) format("woff"),
+        url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.ttf) format("truetype");
+    font-weight: 400;
+}
+
+.body {
+    background: #b6d8fb2f 
+    linear-gradient(0deg, rgba(231,240,255,0) 0%, rgba(253,254,255,0) 64%, rgba(231,240,255,0) 90%);
+    border-radius: 5px;
+    backdrop-filter: blur(3px);
+    outline: solid 1px #000000;
+    background-color: #46a2ff5e;
+    width: 100%;
+    max-width: 450px;
+    color: white;
+    margin: 50px auto;
+    padding: 40px 35px;
+    font-family: SegoeUI,sans-serif;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.search input {
+    flex: 1;
+    border: 0;
+    outline: 0;
+    background: #ffffff;
+    color: #555;
+    padding: 15px 25px;
+    border-radius: 30px;
+    font-size: 16px;
+    transition: all 0.3s;
+}
+
+.search input:focus {
+    box-shadow: 0 0 15px rgba(255,255,255,0.3);
+}
+
+.search img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    padding: 12px;
+    background: #ffffff;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+.temp {
+    font-size: 70px;
+    font-weight: 600;
+    margin: 20px 0 10px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.Location {
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.weather-data {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.col img {
+    width: 40px;
+    filter: drop-shadow(0 0 5px rgba(0,0,0,0.1));
+}
+
+.col p {
+    font-size: 24px;
+    margin: 0;
+}
+
+.col span {
+    font-size: 14px;
+    opacity: 0.8;
+}
